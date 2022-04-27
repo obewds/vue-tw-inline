@@ -8,7 +8,7 @@ head:
 
 
 
-# VueTwInline.vue Component
+# @obewds/vue-tw-inline Component
 
 
 

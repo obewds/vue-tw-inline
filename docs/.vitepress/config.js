@@ -2,7 +2,7 @@
 
 module.exports = {
     base: '/vue-tw-inline/',
-    title: 'VueTwInline.vue',
+    title: '@obewds/vue-tw-inline',
     description: 'A documentation site for the VueTwInline component',
     markdown: {
       lineNumbers: true,
