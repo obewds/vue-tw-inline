@@ -11,9 +11,9 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 :::
 
 
-# ViteVueTsCompoPkgStarter.vue
+# VueTwInline.vue
 
-Welcome to the docs page for OBE:WDS's `ViteVueTsCompoPkgStarter.vue` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `VueTwInline.vue` component for [Vue.js](https://vuejs.org/)!
 
 
 
@@ -21,7 +21,7 @@ Welcome to the docs page for OBE:WDS's `ViteVueTsCompoPkgStarter.vue` component 
 ## Installation
 
 ```bash
-npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
+npm install @obewds/vue-tw-inline --save-dev
 ```
 
 
@@ -36,7 +36,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <template>
-    <ViteVueTsCompoPkgStarter/>
+    <VueTwInline/>
 </template>
 ```
 
@@ -47,7 +47,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <script setup lang="ts">
-    import { ViteVueTsCompoPkgStarter } from '@obewds/vite-vue-ts-compo-pkg-starter'
+    import { VueTwInline } from '@obewds/vue-tw-inline'
 </script>
 ```
 
@@ -59,10 +59,10 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 ```html{3,6}
 <script lang="ts">
     import { defineComponent } from 'vue'
-    import { ViteVueTsCompoPkgStarter } from '@obewds/vite-vue-ts-compo-pkg-starter'
+    import { VueTwInline } from '@obewds/vue-tw-inline'
 
     export default defineComponent({
-        components: { ViteVueTsCompoPkgStarter }
+        components: { VueTwInline }
     })
 </script>
 ```
@@ -84,7 +84,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <template>
-    <ViteVueTsCompoPkgStarter text="My text prop string"/>
+    <VueTwInline text="My text prop string"/>
 </template>
 ```
 
@@ -110,9 +110,9 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 
 ```html{2-4}
 <template>
-    <ViteVueTsCompoPkgStarter>
+    <VueTwInline>
         My slot content
-    </ViteVueTsCompoPkgStarter>
+    </VueTwInline>
 </template>
 ```
 
@@ -132,7 +132,7 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 ## Uninstall
 
 ```bash
-npm uninstall @obewds/vite-vue-ts-compo-pkg-starter
+npm uninstall @obewds/vue-tw-inline
 ```
 
 

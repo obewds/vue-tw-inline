@@ -26,9 +26,9 @@ export default defineConfig({
     outDir: './dist',
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'ViteVueTsCompoPkgStarter',
+      name: 'VueTwInline',
       formats: ['es','cjs','umd','iife'],
-      fileName: (format: string) => `vite-vue-ts-compo-pkg-starter.${format}.js`,
+      fileName: (format: string) => `vue-tw-inline.${format}.js`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled into your library
