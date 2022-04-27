@@ -84,5 +84,8 @@
     "vue3",
     "Vue.js",
     "Tailwind CSS"
-  ]
+  ],
+  "dependencies": {
+    "@obewds/vue-tw-el": "^1.0.2"
+  }
 }

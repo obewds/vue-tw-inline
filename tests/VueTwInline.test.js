@@ -19,7 +19,8 @@ test('VueTwInline.vue component text prop accepts a string value', async () => {
 
     const wrapper = mount(VueTwInline, {
         props: {
-            text: testString
+            tag: 'span',
+            text: testString,
         },
     })
 
@@ -31,14 +32,27 @@ test('VueTwInline.vue component text prop accepts a string value', async () => {
 
 test('VueTwInline.vue component default slot accepts an element node with a child text node', async () => {
 
-    const testStrLiteral = `<div>Test String Value</div>`
+    const testStrLiteral = `<span>Test String Value</span>`
 
     const wrapper = mount(VueTwInline, {
+        props: {
+            tag: 'span',
+        },
         slots: {
             default: testStrLiteral
         },
     })
 
     expect(wrapper.html()).toContain(testStrLiteral)
+    
+})
+
+
+
+test('VueTwInline.vue component does not allow a non-block element tag prop value', async () => {
+
+    const validator = VueTwInline.props.tag.validator
+
+    expect(validator('div')).toBe(false)
     
 })
