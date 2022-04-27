@@ -8,7 +8,7 @@ head:
 
 
 
-# VueTwInline.vue Tests
+# @obewds/vue-tw-inline Tests
 
 
 

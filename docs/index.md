@@ -6,7 +6,7 @@ head:
 ---
 
 
-# VueTwInline.vue
+# @obewds/vue-tw-inline
 
 Welcome to the docs page for OBE:WDS's `VueTwInline.vue` component for [Vue.js](https://vuejs.org/)!
 
