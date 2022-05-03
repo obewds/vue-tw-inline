@@ -19,56 +19,23 @@ Welcome to the docs page for OBE:WDS's `VueTwInline.vue` component for [Vue.js](
 npm install @obewds/vue-tw-inline --save-dev
 ```
 
+<br>
+
 
 
 
 ## Tailwind CSS Integration
 
-In your project's `./tailwind.config.js` file:
+Inherited from and prefaced in the [@obewds/vue-tw-el](https://obewds.github.io/vue-tw-el/#tailwind-css-integration) docs.
 
-```javascript
-module.exports = {
+Detailed in the [@obewds/obewds-tw-config](https://obewds.github.io/obewds-tw-config) docs.
 
-    // ...
-
-    content: [
-        // ...
-        "./node_modules/@obewds/**/dist/*.js", // add this line to include all OBE:WDS stock defaults
-        "./obewds.tw.config.json", // add this line to include your own OBE:WDS tailwind config file defaults
-    ],
-
-    // ...
-
-}
-```
-
-And when using your own OBE:WDS Tailwind CSS config file, you'll need to `provide()` the data to your application, using something along the lines of this pseudo code:
-
-```javascript
-import { createApp } from 'vue'
-import App from './App.vue'
-
-// Ensure the app's main tailwind file is imported
-import './assets/index.css'
-
-// Include your OBE:WDS Tailwind CSS config file
-import obewdsTwConfig from '../obewds.tw.config.json'
-
-const app = createApp(App)
-
-// Provide the data with the SPECIFIC key of 'tw'!
-app.provide('tw', obewdsTwConfig)
-
-app.mount('#app')
-```
+<br>
 
 
 
 
-## Import Component
-
-
-
+## Importing
 
 ### Template syntax
 
@@ -78,9 +45,6 @@ app.mount('#app')
 </template>
 ```
 
-
-
-
 ### Script setup syntax
 
 ```html{2}
@@ -88,9 +52,6 @@ app.mount('#app')
     import { VueTwInline } from '@obewds/vue-tw-inline'
 </script>
 ```
-
-
-
 
 ### Composition API syntax
 
@@ -105,67 +66,33 @@ app.mount('#app')
 </script>
 ```
 
+<br>
 
 
 
 ## Props
 
-
-
-
 ### bgPalette
 
-:white_check_mark: Type `String`  
-:x: Not Required  
-:white_check_mark: Validates
-
-```html{2}
-<template>
-    <VueTwInline tag="span" bg-palette="default"/>
-</template>
-```
+Detailed in the [@obewds/vue-tw-el](https://obewds.github.io/vue-tw-el/#bgpalette) docs.
 
 <br>
 
 ### bgColor
 
-:white_check_mark: Type `String`  
-:x: Not Required  
-:white_check_mark: Validates
-
-```html{2}
-<template>
-    <VueTwInline tag="span" bg-color="default"/>
-</template>
-```
+Detailed in the [@obewds/vue-tw-el](https://obewds.github.io/vue-tw-el/#bgcolor) docs.
 
 <br>
 
 ### borderPalette
 
-:white_check_mark: Type `String`  
-:x: Not Required  
-:white_check_mark: Validates
-
-```html{2}
-<template>
-    <VueTwInline tag="span" border-palette="default"/>
-</template>
-```
+Detailed in the [@obewds/vue-tw-el](https://obewds.github.io/vue-tw-el/#borderpalette) docs.
 
 <br>
 
 ### borderColor
 
-:white_check_mark: Type `String`  
-:x: Not Required  
-:white_check_mark: Validates
-
-```html{2}
-<template>
-    <VueTwInline tag="span" border-color="default"/>
-</template>
-```
+Detailed in the [@obewds/vue-tw-el](https://obewds.github.io/vue-tw-el/#bordercolor) docs.
 
 <br>
 
@@ -181,58 +108,25 @@ app.mount('#app')
 </template>
 ```
 
-> The majority of HTML inline tags passed into the `tag` prop are valid. However, the component does **_exclude all_** of the inline [HTML Empty Elements](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element), as well as excluding **_each_** of the following elements due to runtime issues/errors, so the `body`, `head`, `html`, `noscript`, `script`, `slot` and `template` elements are also excluded and won't validate!
+> The majority of HTML inline level tags passed into the `tag` prop are valid. However, the component does **_exclude all_** of the inline [HTML Empty Elements](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element), as well as excluding **_each_** of the following elements due to runtime issues/errors, so the `body`, `head`, `html`, `noscript`, `script`, `slot` and `template` elements are also excluded and won't validate!
 
 <br>
 
 ### text
 
-:white_check_mark: - Type `String`  
-:x: - Not Required  
-:x: - Doesn't Validate
+Detailed in the [@obewds/vue-el](https://obewds.github.io/vue-el/#text) docs.
 
-
-```html{2}
-<template>
-    <VueTwInline text="My text prop string"/>
-</template>
-```
-
-Outputs:
-
-```html
-<span>My text prop string</span>
-```
-
-::: warning
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
+<br>
 
 ### textPalette
 
-:white_check_mark: Type `String`  
-:x: Not Required  
-:white_check_mark: Validates
-
-```html{2}
-<template>
-    <VueTwInline tag="span" text-palette="default"/>
-</template>
-```
+Detailed in the [@obewds/vue-tw-el](https://obewds.github.io/vue-tw-el/#textpalette) docs.
 
 <br>
 
 ### textColor
 
-:white_check_mark: Type `String`  
-:x: Not Required  
-:white_check_mark: Validates
-
-```html{2}
-<template>
-    <VueTwInline tag="span" text-color="default"/>
-</template>
-```
+Detailed in the [@obewds/vue-tw-el](https://obewds.github.io/vue-tw-el/#textcolor) docs.
 
 <br>
 
@@ -241,76 +135,9 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 
 ## Slots
 
+### #default
 
-
-
-### default
-
-```html{2-4}
-<template>
-    <VueTwInline tag="span">
-        My slot content
-    </VueTwInline>
-</template>
-```
-
-Outputs:
-
-```html
-<span>My slot content</span>
-```
-
-::: danger
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
-
-## Text Prop vs Slot Precidence
-
-```html
-<template>
-
-    <!--
-    The text="" attr/prop value takes precidence 
-    over slot content!
-    -->
-    <VueTwInline tag="span" text="This text prop value will override">
-        This slot content.
-    </VueTwInline>
-
-</template>
-```
-
-Outputs:
-
-```html
-<span>This text prop value will override</span>
-```
-
-<br>
-
-## Empty State Default Placeholder String
-
-```html
-<template>
-
-    <!-- 
-    Empty slot and text prop/attr values 
-    will render the default component 
-    slot placeholder string "VueEl"!
-    -->
-    <VueTwInline tag="span" text="">
-        <!-- This comment won't render -->
-    </VueTwInline>
-
-</template>
-```
-
-Outputs:
-
-```html
-<!-- The placeholder will still render, though -->
-<span>VueEl</span>
-```
+Detailed in the [@obewds/vue-el](https://obewds.github.io/vue-el/#default) docs.
 
 <br>
 
@@ -360,3 +187,4 @@ console.log('Hello, VitePress!')
 
 :::
 -->
+
