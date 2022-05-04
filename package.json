@@ -1,6 +1,6 @@
 {
   "name": "@obewds/vue-tw-inline",
-  "description": "The OBE:WDS VueTwInline component for Vue.js 3 and Tailwind CSS 3",
+  "description": "The @obewds/vue-tw-inline modular design system component for Vue.js",
   "version": "0.2.0",
   "author": "@oberocks",
   "homepage": "https://github.com/obewds/vue-tw-inline#readme",
