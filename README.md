@@ -1,6 +1,6 @@
 # vue-tw-inline
 
-The OBE:WDS VueTwInline component for Vue.js 3 and Tailwind CSS 3
+The @obewds/vue-tw-inline modular design system component for Vue.js
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/obewds/vue-tw-inline?label=Github&logo=github&style=for-the-badge) &nbsp; ![npm](https://img.shields.io/npm/v/@obewds/vue-tw-inline?color=%23cc3534&logo=npm&style=for-the-badge)
 
