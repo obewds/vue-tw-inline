@@ -43,6 +43,7 @@
   },
   "peerDependencies": {
     "@obewds/obewds-tw-config": "^0.6.1",
+    "@obewds/vue-component-helpers": "^0.7.1",
     "@obewds/vue-tw-el": "^1.2.0",
     "@obewds/vue-validators": "^0.3.2",
     "vue": "^3.2.33"
