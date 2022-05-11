@@ -35,6 +35,7 @@ export default defineConfig({
       external: [
         'vue',
         '@obewds/obewds-tw-config',
+        '@obewds/vue-component-helpers',
         '@obewds/vue-tw-el',
         '@obewds/vue-validators',
       ],
@@ -43,6 +44,7 @@ export default defineConfig({
         globals: {
           vue: 'Vue',
           '@obewds/obewds-tw-config': 'ObewdsTwConfig',
+          '@obewds/vue-component-helpers': 'VueComponentHelpers',
           '@obewds/vue-tw-el': 'VueTwEl',
           '@obewds/vue-validators': 'VueValidators',
         },
