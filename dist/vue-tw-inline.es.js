@@ -1,8 +1,8 @@
-import { defineComponent, openBlock, createBlock, unref, withCtx, renderSlot } from "vue";
-import { VueTwEl } from "@obewds/vue-tw-el";
-import { inlineLevelElementTags } from "@obewds/vue-validators";
-const _sfc_main = /* @__PURE__ */ defineComponent({
-  name: "VueTwInline",
+import { defineComponent as l, openBlock as r, createBlock as o, unref as a, withCtx as d, renderSlot as n } from "vue";
+import { VueTwEl as u } from "@obewds/vue-tw-el";
+import { inlineLevelElementTags as g } from "@obewds/vue-validators";
+const C = /* @__PURE__ */ l({
+  __name: "VueTwInline",
   props: {
     bgPalette: {
       type: String,
@@ -22,8 +22,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     },
     tag: {
       type: String,
-      required: true,
-      validator: (prop) => inlineLevelElementTags.includes(prop)
+      required: !0,
+      validator: (t) => g.includes(t)
     },
     text: {
       type: String,
@@ -38,24 +38,24 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       default: "default"
     }
   },
-  setup(__props) {
-    return (_ctx, _cache) => {
-      return openBlock(), createBlock(unref(VueTwEl), {
-        bgPalette: __props.bgPalette,
-        bgColor: __props.bgColor,
-        borderPalette: __props.borderPalette,
-        borderColor: __props.borderColor,
-        tag: __props.tag,
-        text: __props.text,
-        textPalette: __props.textPalette,
-        textColor: __props.textColor
-      }, {
-        default: withCtx(() => [
-          renderSlot(_ctx.$slots, "default")
-        ]),
-        _: 3
-      }, 8, ["bgPalette", "bgColor", "borderPalette", "borderColor", "tag", "text", "textPalette", "textColor"]);
-    };
+  setup(t) {
+    return (e, i) => (r(), o(a(u), {
+      bgPalette: t.bgPalette,
+      bgColor: t.bgColor,
+      borderPalette: t.borderPalette,
+      borderColor: t.borderColor,
+      tag: t.tag,
+      text: t.text,
+      textPalette: t.textPalette,
+      textColor: t.textColor
+    }, {
+      default: d(() => [
+        n(e.$slots, "default")
+      ]),
+      _: 3
+    }, 8, ["bgPalette", "bgColor", "borderPalette", "borderColor", "tag", "text", "textPalette", "textColor"]));
   }
 });
-export { _sfc_main as VueTwInline };
+export {
+  C as VueTwInline
+};
