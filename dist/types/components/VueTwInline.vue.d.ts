@@ -92,7 +92,7 @@ declare const _default: {
                 type: StringConstructor;
                 default: string;
             };
-        }>>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, {
+        }>>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, {
             text: string;
             bgPalette: string;
             bgColor: string;
@@ -192,7 +192,7 @@ declare const _default: {
         type: StringConstructor;
         default: string;
     };
-}>>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, {
+}>>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, {
     text: string;
     bgPalette: string;
     bgColor: string;
